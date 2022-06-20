@@ -89,6 +89,12 @@ p, a, span {
   top: 0.15em;
 }
 
+@media only screen and (max-width: 390px){
+  #page-title{
+    font-size: 2.6em;
+  }
+}
+
 header {
   background: #5fbb99;
   display: flex;
@@ -123,7 +129,7 @@ main, footer {
 }
 
 #album-img-container img{
-  max-width: 350px;
+  max-width: min(100%, 350px);
   height: auto;
   margin-bottom: 5px;
 }
